@@ -1,0 +1,597 @@
+
+
+            
+            HTML - Hyper Text Markup Language
+        -----------------------------------------
+
+    1. Markup Language
+    2. HTML - Elements
+        - staring tag, content, ending tag
+        ex : <tag attribute> content </tag>
+    3. Basic Structure of HTML
+        <html>
+            <head> <title>title</tile> </head>
+            <body> content to display in browser </body>
+        </html>
+    4. HTML 5 version
+    5. Basic Tags - used to display content in browser
+        - Heading : h1,h2,h3,h4,h5,h6
+        - Paragraph : p tag
+        - Text Formatting :
+            - bold : b tag
+            - itallics : em tag / i tag
+            - highlight : mark tag
+            - strike : s tag
+            - superscript : sup tag
+            - subscript : sub tag
+        - link : a tag
+        - list :
+            - Ordered List : ol tag, list content - li tag
+            - Unorder List : ul tag, list content - li tag
+            - Description/Definition list : dl tag , dt tag , dd tag
+        - Table :
+            - table tag, thead tag, tbody tag, tr tag, th tag, td tag
+        - image : img tag, - src, alt, width, height
+        - video : video tag , controls, src
+        - iframe tag : embed content available other webpage to our page
+        - hr tag : display horizontal line
+        - marquee tag : display moving contents
+        - Container tags : 
+            - div tag, section tag, article tag
+        - Form : used to input user data
+            - input tag : different type are - text, number, password, radio, date, checkbox, file, button
+            - textArea tag
+            - button 
+        - icon : 
+    6. Based on tag display in browser
+        - Block Elements : h1-h6, p
+        - Inline Elements : b
+    7. Semantic Tags 
+        - header tag
+        - section tag 
+        - aside tag
+        - footer tag           
+            
+            
+            --------- CSS - Cascading Style Sheet ------------
+        
+        1. Style HTML Elements
+        2. Different ways apply CSS in HTML
+            - Inline CSS : using 'style' attribute 
+                - syntax : style="property:value;"
+            - Internal CSS : using 'style tag'
+                - syntax : <style> css-selector{ property:value; } </style>
+            - External CSS : style will define in an External css file, link the css file with HTML page
+                - syntax : css-selector { property:value; } 
+        3. CSS Selectors : used to select html elements in CSS
+            - Using tag name
+            - Using id
+            - Using Class
+            - Using Universal selector
+            - Using Grouping selector (comma)
+            - Using CSS Combinators
+                - Using Descendant Selector (space)
+                - Using Child Selector (>) 
+                - Using Adjascent Sibling Selector (+) 
+                - Using Genaral Siblings Selector (~) 
+        4. Box Model : 
+            - margin
+            - border
+            - padding
+        5. CSS Properties
+            - Float
+            - FlexBox : to arrange items in row and column
+                - Flex container : display set as flex
+                - justify content
+                - align items
+                - flex direction 
+                - flex warp
+            - Position 
+                - static
+                - relative
+                - absolute
+                - fixed
+                - sticky
+            - z-index : 
+            - Grid : to arrange items in row and column
+                - grid-template-columns : defines the number of columns in your grid layout, and it can define the width of each column.
+                - grid-template-rows : property defines the height of each row.
+                - justify-content : property is used to align the whole grid inside the container.
+                - align-content : property is used to vertically align the whole grid inside the container.
+        6. Pseudo-class : is used to define a special state of an element.
+            - selector:pseudo-class {   property: value; }
+        7. Linear Gradient : used to apply combination of colors as background
+            - background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+        8. Animation : to define use Keyframes
+            - Predefined Animation Library
+                - animate.style : https://animate.style/
+                - aos Animation
+                - Locomotive scroll
+        9. Responsive Website design 
+            - Media Queries : @media
+                - width and height of the viewport
+                - orientation of the viewport (landscape or portrait)
+                - resolution
+
+            --------- Bootstrap - Framework of CSS ------------
+
+    1. Build fast, responsive sites
+    2. Prdefined class of style, to apply Bootstrap style to an html element, apply it as its class
+        - container/container-fluid : used to provide margin left and right
+        - m/mt/mb/ms/me-1/2/3/4/5 : used to margin
+        - border 
+        - success/danger/warning/secondary/dark/light/primary/info : 
+        - text-color-name
+        - p/pt/pb/ps/pe-1/2/3/4/5 : used to padding
+        - img-fluid
+        - w-25/50/75/100
+        - d-flex
+    3. Grid system
+
+    --------- FIGMA ------------
+    1. Design using FIGMA
+    2. developing webpage using figma file
+
+    --------- JavaScript - Dynamically Programmed Language ------------
+
+    1. NODE JS : It Provides runtime environment for JS
+    2. Basic Concepts in JS
+        - Display content : console.log(content)
+        - Data types in JS : use typeof
+            - string
+            - number 
+            - boolean
+            - object
+        - Identifiers : set of rules for setting Variable name
+        - Variables : used to store values
+            - var keyword
+            - const keyword
+            - let keyword
+        - Hoisting : moving declarations to the top.
+        - Difference between var , const and let keywords
+        ----------var--------  -----------const-------------  ----------let----------------
+        1. use var keyword          use const keyword           use let keyword
+        2. can reassign value       cannot reassign value       can reassign value
+        3. Global scope             Block scope                 Block scope
+        4. Hoisted with undefined   Hoisted without value       Hoisted without value
+        - Combinig diffrenet types of data in JS
+            - using commas
+            - using + (concantenation) : it convert the content into string
+            - using `(back tick - template literals) 
+        - Operators in JS
+            - Assignment Operators : =
+            - Arithmetic Operators : + - * / % ** return a number
+            - Relational Operators : > >= < <= == != === it returns boolean 
+            - Logical Operators : && || ! 
+                        &&              ||              !
+                    T && T = T      T || T = T         !T = F
+                    T && F = F      T || F = T         !F = T
+                    F && T = F      F || T = T
+                    F && F = F      F || F = F 
+            - Increment/Decremnt Operators : ++ / -- 
+            - ShortHand Operators : += -= *= 
+            - Ternary Operators : condition ? Statements executed when conditon become true : Statements executed when conditon become false
+            - Truthy Operators : condition && Statements executed when conditon become true
+            - Spread Operator : used (...) to expand an iterating variable to a single iterating variable
+            - REST Operator : used (...) to combine rest of the data to a single array
+        - Descision making / conditional Statements
+            - if Statements : 
+                - syntax : if(conditon){ Statements executed when conditon become true }
+            - if-else Statements :
+                - syntax : if(conditon){ Statements executed when conditon become true }else{ Statements executed when conditon become false }
+            - else if Ladder : multiple condition are checking
+            - switch : switch(condition){ case an1: step, break; }
+        - Looping Statements : used to execute same task in multiple times 
+            - while loop 
+                - syntax :  1. initialise a Variable
+                            2. while (condition using the same Variable) {
+                                loop body execute when condition become true
+                            3. change Variable that used in the while condition
+                            }
+            - for loop 
+                - syntax : for(initialise a Variable;condition using the same Variable;change Variable that used in the condition){
+                    loop body execute when condition become true
+                }
+                - break Statements : 
+                - continue Statements :
+            - Nested loop : A loop inside another loop
+                - for(initialise;condition;change){ // outer loop
+                    for(initialise;condition;change){ //inner loop
+                        //inner loop executes complete first
+                    }
+                }
+        - Functions : used to perform a specific task in coding
+            - function Definition 
+                - syntax : function function-name(par1,par2...){
+                    task Definition
+                }
+            - Function call
+                - syntax : function-name(arg1, arg2...argn)
+            - return Statements : used to return data from function Definition to function call
+            - Types of Functions
+                - Arrow function : alternative of a function Definition
+                    syntax : function-name = (par1,par2...)=>{function body}
+                - Predefined functions : Math.floor(), console.log()
+                - Callback function : A function Definition inside another function call
+                    - function-name(function name({  }))
+                - Anonymous function : nameless function are self executing function
+                - Recursive function : Calling a function inside its own Definition
+                - Nested function :  Defining a function  inside another function Definition
+                - clossure : is a function having access to the parent scope from a child
+                - currying function : used to transform the function of multiple arguments into several functions of a single argument
+        - Array : used to store multiple values inside single Variable
+                - type of array : object
+                - total items in an array : array-name.length
+                - index : to access item from an array, starts from 0
+                - Common Array Methods
+                    - push(item) : insert data at end of an array
+                    - unshift(item) : insert data at starting of an array
+                    - pop() : delete last item of an array
+                    - shift() : delete first item of an array
+                    - sort(comfunction) : used to sort / rearrange existing array
+                    - forEach(Callback function) : similar to for-of loop
+                    - filter(Callback function) : create a new array with elements satisfying the condition applied using a function in the existing array
+                    - map(Callback function) : create a new array with elements appling mapping function in the existing array
+                    - find(Callback function) : return an existing array item  satisfying the condition applied using a function in the existing array
+                    - reduce(callback function) : return  a single value (sum/highest/lowest), after applying a reducer function to an existing array
+                        - to perform arithmetic Operation in reduce function then reduce must apply to the array containin only numbers
+                    - reduceRight(callback function) : return  a first value (highest/lowest), after applying a reducer function to an existing array
+                    - some(callback-function) : return a boolean value (true/false) based on condition applied using a function in the existing array
+                    - flat(depth/Infinity) : Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth. return one dimensional array if flat method argument is 'Infinity'
+                    - includes(item) : return a boolean value (true/false) based on the item present in the existing array
+                    - indexOf(item) : return index corresponding to that item, if item not present then it return -1 as its index
+                    - splice(start,deleteCount) : used to delete  / replace a specific item from an array and it returns a new array with deleted items
+                    - join(seperator) : used to join array items seperated by the seperator given in the join function and return it as a string
+                    - reverse()  : Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
+                - Array.from(iterating-Variable) : used to convert an iterating Variable to an array
+        - String : zero or more characters written inside quotes
+                - String Methods 
+                    - toLowerCase() : used to convert to lowercase
+                    - toUpperCase() : used to convert to uppercase
+                    - startsWith(data) : return boolean based on the string start with the given data
+                    - endsWith(data) : return boolean based on the string ends with the given data
+                    - trim() : to avoid unwanted white spaces either from start/ending of a string
+                    - includes(data) : return boolean based on the given data in present in the string
+                    - split(seperator) : return array with items seperated by the seperator given in the function after applying the given string
+                    - slice(start,ending)
+                    - substring()
+                - eval(string-expression) : used to evaluate string expression
+        - Object : Data type used to store multiple datas in a single variable, data will be stored as {key:value} pair in an object
+                - access values from an object : use key, object-name["key-name"] / object-name.key
+                - insert value to an existing object : object-name["key-name"] = value / object-name.key = value
+                    - Object.assign(target-object,source) : used to insert dat into an object
+                - To check a key is available in an object : use 'in' Operator , object-name.hasOwnProperty("key") it return a boolean value based on the availability of the key in the object
+                - Object.values(object-name) : return an array with  all values of an object 
+                - Object.keys(object-name) : return an array with  all keys of an object 
+                - delete a key from an object : delete object-name.keyname
+        - Exceptions (Runtime Errors) handling :  try-catch block
+
+    --------- OOPs : Object Oriented Programming ------------
+
+    1. Basic Fundamental in OOPs
+        - Class : Blue print of Object, 'property' as well as some 'functions'
+        - Object : Real world entity 
+            - object for class used to access class properties and methods outside the class
+                - new class-name()  : used to create object for a class, and constructor method will get executed automatically
+                - constructor is used to initialise class properties
+        - Reference : used to connect class with its objects
+        - Defining scope for properties
+            - Private
+            - Public
+            - Protected
+    2. Features of OOPs
+        - Inheritance : 
+            - Classical Inheritance : use 'extends' keyword
+            - Prototype Inheritance : use '__proto__' keyword
+        - Polymorphism : use REST Operators to implemnet it in JS
+        - Abstraction : Hiding Important data from users
+        - Encapsulation : Data stored in another data
+
+    --------- JavaScript - Front End Technology ------------
+
+    - Used to provide behaviour to the html elements according to user action
+    - How can we apply js in HTML
+        - Internal JS : use script tag 
+        - External JS : use External js file and link the js with html using script tag
+    - DOM (Document Object Model) is a hierarchical representation (tree structure) of HTML documents. It defines the structure and properties of elements on a webpage, enabling JavaScript to dynamically access, manipulate, and update content, enhancing interactivity and functionality.
+    - DOM Methods : How to select/access HTML elements to JS
+        - using html tag name : document.getElementByTagName('tag-name')
+        - using class name : document.getElementByClassName('class-name')
+        - using id : document.getElementById('id') / id
+        - using querySelector : document.querySelector('tag/.class/#id')
+        - using querySelectorAll : document.querySelectorAll('tag/.class/#id')
+    - Events : are triggererd by user action
+        - Mouse Related Events : click, hover, drag...
+        - Keyboard Related Events : key press down, key up...
+        - Touch based Events
+    - Access / Update content of a tag
+        - innerHTML
+        - innerText
+    - Permanently Storing Data in webpage / Browser
+        - Local Storage : data stored as key and value and both should be in string
+            - to store data : setItem(key,value)
+            - to get/access data : getItem(key)
+            - to remove data : removeItem(key)
+        - Session Storage : data stored as key and value and both should be in string
+    - API : Application Programming Interface - used to commmunicate application in internet
+        - URL : Uniform Resource Locator, ex: https://jsonplaceholder.typicode.com/users/1
+            - baseURL : https://jsonplaceholder.typicode.com
+        - URI : Uniform Resource Identifiers , ex : /users
+        - Path Parameter : values along with a URL , ex: 1
+        - Query Parameter : values along with a ? in URL
+        - Body Parameter : values along the request body
+        - Based on communication between 2 application we can classify API into different category
+            - Types of API Architecture
+                - REST API : HTTP Request, JSON Data
+                - SOAP API : HTTP request , XML Data
+                - GRAPHL
+        - JSON : JavaScript Object Notation - format in which data is shared between different application in internet
+            -  data stored as key and value pair : {'key':value} , here type of key must be string
+        - HTTP (Hyper Text Transfer Protocol)
+            - HTTP Request : have 2 parts
+                - HTTP Header part : used to hold secret / more secure data
+                - HTTP Body part : used to share data from one application to another, data format must be JSON
+            - Request can be of different types
+                - GET Request : used to read / get  data from another application
+                - POST Request : used to store data from one application to another
+                - PUT request : used to complete edit existing data from an application
+                - PATCH request : used to partially edit existing data from an application
+                - DELETE request : used to remove data from one application
+            - HTTP Response : Response for HTTP request, it can be of different type, they are disguished by its 'status code' 
+                - 1xx : Informational
+                - 2xx : success
+                - 3xx : Redirectional 
+                - 4xx : client Errors
+                - 5xx : Server Errors
+    - Resolving function call in JavaScript
+        - Types of function : to handle function call js uses a single call stack, so its konwn as Single threaded Programming
+            - Synchronous function : function without delay
+            - Asynchronous function : function with delay
+                - Callback function : holds in callback queue
+                - API call : holds in microtask/priority queue
+        - Handling Asynchronous function in JS
+            - Callback : nesting of callback leads to 'callback hell'
+            - Promise : every promise has 2 states
+                - resolved state : response for the request, to get resolved response promise has to use 'then' method
+                - reject state : we wont get any response for request , to resolve reject state promise has 'catch' method
+                - pending state : waiting time during making an Asynchronous function call
+                - async - await keywords : resolve promise without using callbacks
+                    - set async keyword to a function , so that we can use 'await' keyword in an Asynchronous call which return promise
+        - API Call Handling in JS
+            - using XMLHTTPRequest class / AJAX (Asynchronous JavaScript XML)
+            - using fetch method : based on promise
+            - use axios library : based on promise
+
+
+    --------------- REACT - Advanced Front End Technology -----------------------
+
+    - Basic Concepts
+        - React App : Collection of JS Libraries
+        - React App uses collection components, components must arranged in a tree structure, Root component it name is by default "App" Component
+        - React used to create single page Application
+        - Pure function : used to build react component, which doesnot cause side effects 
+        - Declarative Approach 
+        - Virtual DOM : Light weight representation of real DOM
+        - Babel Library : transpile JSX code to simple react function which is understood browser
+        - JSX (JavaScript XML) - JS Extension for HTML : used to display contents in browser
+            - JSX Elements : const heading = <h1>Heading</h1>
+            - Rules for JSX code
+                - Every JSX element must inside a single parent tag
+                - Parent tag : can be a container tag / react fragment ( <>...</> )
+                - Every JSX tag must have a closing tag (<h1>content</h1> , self closing tag <br/>  )
+                - JSX using camel Case , camel case : fontSize
+                - Instead attribute 'class' JSX uses 'className'
+                - Instead of attribute 'for' use 'htmlFor' in JSX
+                - use js code in JSX, we have place code inside {js-code}
+        - REACT App Creation
+            - CRA (using create-react-app command) : npx create-react-app app-name, npm start
+            - Vite : is tool to Build web projects
+                - install vite globally : npm i -g create-vite
+                - react app using vite : npm create vite@latest reactAppName -- --template react
+                - To optimise react ap using vite : use 'npm run build'
+            - File & Folder Structure of React app using vite
+                - .gitignore : used to mention files/folder tobe ignored while adding to git
+                - package.json : npm configuration file for the project
+                - package-lock.json : contain version history of all packages installed
+                - index.html : entry point of your react app
+                - node_modules folder : used to hold copies dependent Libraries used to create react app
+                - public folder : 
+                - src folder : logic defined folder
+                    - assets folder : used to store media file 
+                    - main.jsx : create ReactDOM with parent node as div with id as 'root', and render root component of react app (App Component) inside node
+            - Run React app using vite command : npm run dev
+        - Components : Part of user Interface, are independent and reusable code
+            - create react component : create js/jsx file, file name must start with capital letter
+            - Types of Components
+                - Class Based component / stateful component : 
+                - Functional Based Components / stateless component : create js Pure function and return jsx from that function
+                - Class Based Component                         Functional based component
+                ------------------------------------        ------------------------------------
+                1. uses class which extends from react      1. JS Pure function which accept props
+                component , its render method must              and return JSX elements
+                return JSX elements
+                2. Statefull component                      2. Stateless component
+                3. It requires render method to return      3. No need to use render method
+                JSX 
+                4. Constructor used to initialise state     4. No need to use constructor
+                5. Uses life Cycle method in component      5. Life Cycle methods are not available
+                6. Component will alive depending on        6. It executes from top to bottom, once it 
+                different life Cycle phases                     return JSX, then it cannot be alive
+                7. Hooks are not used                       7. Hooks used to provide react Features
+        - Data Sharing between component 
+            - Parent Component to child component : use 'props' in child component, props is property of an component, and it type is object, props will always placed as the argument of child component function
+        - Conditional Rendering : used to Rendering contents in browser acoording to a condition, to define condition we can use if Statements (&&) , if-else Statements (?:)
+        - Displaying Array using JSX in React app : use map method and to uniquely identify each item in a list use 'key' attribute to the duplicating JSX element in Component
+        - React Events Handling : 
+            - Handling function without argument : event={functionName}
+            - Handling function with argument : event={()=>functionName(arg)}
+            - Handling function with argument as that event : event={(event)=>functionName(event)}
+        - Applying CSS in React Component
+            - Inline CSS : style={{cssProperty:value,}}
+            - External CSS : use External css file to define style and to link css file with component use import 'path of css file'
+            - CSS Modules file : use css module file , use file extension as .module.css, define global style in a single file using css selector as className 
+        - Styling Frameworks for React
+            - Material UI : npm install @mui/material @emotion/react @emotion/styled
+            - React Bootstrap : npm install react-bootstrap bootstrap, to properly use react bootstrap in react app, we must include bootstrap theme from https://bootswatch.com/, you have choose a theme, and download its bootstrap.min.css file and add it to src folder of react app, import theme file into main.jsx file
+        - React State : used to store values in a component , is an object, whenever state changes component will re-render , to change the state use setState(value)
+        - React Component Life Cycle Methods
+            1. Mounting Phase : Putting JSX into DOM
+                - constructor()
+                - getDerivedStateFromProps()
+                - render()
+                - componentDidMount()
+            2. Updating Phase : When component is Updating
+                - getDerivedStateFromProps()
+                - shouldComponentUpdate()
+                - render()
+                - getSnapshotBeforeUpdate()
+                - componentDidUpdate()
+            3. Unmounting Phase : Removing a component from DOM
+                - componentWillUnmount()
+        - React Hooks : used to provide react component Features to Functional component , hooks are predefined functions in react, inorder to use a hook in function component it has to call the hook
+            - Rule for calling hooks in Functional component
+                1. Import hook from react, in component
+                2. Hooks can called at the top level of a component
+                3. Hooks cannot be conditional
+            - Two types hooks
+                - Predefined Hooks
+                    - useState hook : used to create state in Functional component
+                    const [stateName,state Updating function name] = useState(initialValue)
+                    - useEffect hook : used to provide side effects to the component
+                        - syntax : useEffect(callback,dependency)
+                            - callback : used to provide effects using function
+                            - dependency : decide when side effects applied to component
+                                - no dependency : side effects will apply to the component whenever a change happens
+                                - [] empty array : side effects will applied only at the time of component Creation
+                                - [state/props/variable] : side effects will applied  at the time of component Creation and changing of state/props/variable that used in the dependency
+                - Customised Hooks : create a js file with filename starts with 'use', inside file define a function with name same as its filename.
+        - Handling Forms in React : how it handling data when it changes also when it submitted
+            - In react form data must handled by react component, to store data it has to use state
+            - While submitting the form , use preventDefault() to avoid unneccessary refreshing of webpage
+            - 2 types of component depending upon how data is managed by component in Forms
+                - Controlled component : datas will be stored in component state, 
+                - Uncontrolled component : 
+        - Routing in React : use React Router DOM library, use command "npm i react-router-dom"
+            - Inorder to setup path for component, the entire react app must render inside 'BrowserRouter' component of react-router-dom library
+            - Render all component needed path must be inside 'Routes' component of react-router-dom library, it must inside App component
+            - to set up path for component, we have to pass component as property of 'Route' component of react-router-dom library
+            - Link component : to redirect from one path to another
+        - API Call in React using Axios Library return promise
+            - Install axios : npm install axios
+            - axios request configuaration
+        - Different ways to communicate between Components
+            - State lifting : uses 'props' share data between parent to child, state create its parent instead of child so that parent can share lifted state to its child
+
+
+     ----------------------------------------
+                JSON SERVER
+        ----------------------------------------
+        1. Create a folder to hold json file
+        2. Create package.json file inside the folder : npm init -y
+        3. Create db.json file inside the folder and resources as key to the json file
+        4. To run json file install json-server : npm i json-server / npm i json-server@0.17.4
+        5. To run json file in localhost use : npx json-server db.json / node index.js
+        -------------------------------------------------
+              Deploying A  JSON FILE  using NODE JS
+        -------------------------------------------------
+        1. Create index.js file server folder
+        2. update script in package.json file as "start":"node index.js"
+        3. create .gitignore file and add 'node_modules' folder
+        4. Define json-server to run json file in index.js
+            - import json-server
+            - create server run json file using create() method of jsonServer
+            - create middleware used by JSON Server.
+            - set up route for json file in server
+            - use middleware, route in server app
+            - listen the app in given port to resolve client request
+        5. To run the app, use 'node index.js'
+
+Drawbacks of State-Lifting:
+---------------------------
+1) unwanted Prop drilling and coupling
+
+REDUX - Definition:
+-------------------
+    Redux is a state management library for React applications. It helps you manage the state of your application in a centralized way. It provides a way to store and manage the state of your application in a single object called the store.
+
+Why REDUX:
+----------
+1) To avoid 'prop drilling' and to manage state in React app
+2) Packages needed to implement REDUX
+    - React-Redux : Official React bindings for REDUX
+    - Redux Toolkit : This provides toolset for efficient Redux development
+
+
+Command to install redux:
+-------------------------
+npm install @reduxjs/toolkit
+npm install react-redux
+
+
+REDUX Features:
+---------------
+1) Creation of Store: Store is used to hold all states
+    - configureStore() : helps to create redux store to hold all states in an app .
+    - To provide store to react app use 'Provider' component from react-redux library
+2) Action : used to define logic to update state
+3) Reducer : used to hold updated value of state in store
+4) createSlice() : used to combine both actions and its reducer, it return action and reducer, we pass argument to createSlice as object (name, initial state value, reducers)
+5) useSelector hook : used to access state from store to component
+    syntax: useSelector(state=>state.reducer-name)
+6) useDispatch hook : used to execute action from a component.
+                    - it returns the dispatch function capable of executing action from the redux store, in this action is passed as argument
+
+
+
+e-cart using Redux and Tailwind CSS
+
+Tailwind CSS:
+-------------
+Official Website : https://tailwindcss.com/
+
+Steps:
+------
+1. Install Tailwind CSS
+    Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
+
+2. Install Tailwind CSS
+    Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
+
+3. Configure your template paths
+    Add the paths to all of your template files in your tailwind.config.js file.
+
+4. Add the Tailwind directives to your CSS
+    Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+
+
+
+- All redux methos are Synchronous
+- createAsyncThunk(actiontype,function which can return promise) : To make Asynchronous function call in an action, 
+- Normal reducer cannot resolve promise, inorder to resolve promise we have to use extraReducer in Slice.
+- extraReducer has builder object which can define different cases for pending / fullfilled / rejected
+
+------------------------MongoDB - Database -----------------------------------
+
+1. used to store and manage data Permanently
+2. difference between SQL and MongoDB
+
+        SQL  (MYSQL,Oracle)                                  MongoDB
+    ----------------------------                ----------------------------------
+
+1. Relational SQL DBMS                       1. Document/JSON oriented NoSQL DB
+2. Data stored in Table, every               2. To store data, it uses 'collection', it can store multiple JSON documents.
+table must have rows and fixed 
+column.
+3. Use fixed schema                          3. Use dynamic schema 
+4. Support rich set of data types            3. Limited set of data types
+5. Optimised for complex join                5. Optimised for scalability and performance.
+and transactions.
+6. Uses in traditional business              6. Used in bigData and real time applications.
+applications.
+
+3. MongoDB: a document database designed for ease of application development and scaling.
+    You can run MongoDB in the following environments:
+    MongoDB Atlas  : The fully managed service for MongoDB deployments in the cloud
+    MongoDB Enterprise  : The subscription-based, self-managed version of MongoDB
+    MongoDB Community  : The source-available, free-to-use, and self-managed version of MongoDB
+
